@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbitrum & Layer 2 - Home</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet"
+    />
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Arbitrum Hub</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active"><span>Home</span></a></li>
+                <li><a href="concepts.html"><span>Concepts</span></a></li>
+                <li><a href="prices.html"><span>Live Prices</span></a></li>
+                <li><a href="simulator.html"><span>Block Simulator</span></a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <span class="toggle-track">
+                        <span class="toggle-thumb">
+                            <span class="toggle-icon sun">☀️</span>
+                            <span class="toggle-icon moon">🌙</span>
+                        </span>
+                    </span>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+
+        <div class="hero-bg-orb orb-1"></div>
+        <div class="hero-bg-orb orb-2"></div>
+
+        <div class="container">
+
+            <div class="hero-badge">
+                🚀 Layer 2 Scaling Solution
+            </div>
+
+            <h1 class="hero-title">
+                Scale Ethereum with <br />
+                <span class="gradient-text">Arbitrum</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Experience lightning-fast transactions and minimal fees on
+                Ethereum’s leading Layer 2 solution. Built for the future
+                of decentralized finance.
+            </p>
+
+            <div class="hero-actions">
+                <a href="concepts.html" class="cta-button">
+                    Explore Concepts →
+                </a>
+
+                <a href="simulator.html" class="cta-button-outline">
+                    Try Simulator
+                </a>
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat-item">
+                    <span class="stat-value">40,000+</span>
+                    <span class="stat-label">TPS</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <span class="stat-value">~$0.01</span>
+                    <span class="stat-label">Avg Fee</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <span class="stat-value">99%</span>
+                    <span class="stat-label">Cost Reduction</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <span class="stat-value">$10B+</span>
+                    <span class="stat-label">TVL</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about">
+        <div class="container">
+
+            <div class="section-label">About</div>
+
+            <h2>Why Layer 2 Solutions?</h2>
+
+            <p class="about-text">
+                Ethereum mainnet faces scalability challenges — high gas fees
+                and limited throughput make it expensive for everyday users.
+                Layer 2 solutions like Arbitrum process transactions off the
+                main chain while inheriting Ethereum's security, enabling
+                thousands of transactions per second at a fraction of the cost.
+            </p>
+
+            <h3>What is Arbitrum?</h3>
+
+            <p class="about-text">
+                Arbitrum is an Optimistic Rollup that bundles multiple
+                transactions together and submits them to Ethereum as a
+                single batch.
+
+                It assumes transactions are valid by default (optimistic)
+                and only runs fraud proofs if someone challenges them.
+
+                This approach dramatically improves scalability while
+                preserving Ethereum-level security.
+            </p>
+
+            <div class="benefit-box">
+
+                <div class="benefit-icon">🚀</div>
+
+                <div>
+                    <h4>Real-World Benefit</h4>
+
+                    <p>
+                        A simple token swap that costs $50+ on Ethereum
+                        mainnet can cost less than $0.50 on Arbitrum —
+                        a massive reduction in fees while maintaining
+                        strong security guarantees.
+
+                        DeFi protocols and NFT applications can finally
+                        serve mainstream users affordably.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features">
+        <div class="container">
+
+            <div class="section-label">Features</div>
+
+            <h2>Key Features</h2>
+
+            <p class="section-subtitle">
+                Everything you need to build scalable decentralized applications
+            </p>
+
+            <div class="feature-grid">
+
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">⚡</div>
+
+                    <h3>Lightning Fast</h3>
+
+                    <p>
+                        Process 40,000+ transactions per second with
+                        near-instant confirmations.
+                    </p>
+
+                    <div class="feature-tag">40K TPS</div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">💰</div>
+
+                    <h3>Ultra Low Fees</h3>
+
+                    <p>
+                        Pay 95–99% less in gas fees compared to Ethereum mainnet.
+                    </p>
+
+                    <div class="feature-tag">~$0.01 avg</div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">🔒</div>
+
+                    <h3>Ethereum Security</h3>
+
+                    <p>
+                        Inherit Ethereum’s battle-tested security through
+                        fraud proofs and on-chain data availability.
+                    </p>
+
+                    <div class="feature-tag">L1 Security</div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">📦</div>
+
+                    <h3>Batch Processing</h3>
+
+                    <p>
+                        Thousands of transactions are compressed into
+                        a single batch for efficiency.
+                    </p>
+
+                    <div class="feature-tag">Compression</div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">🌉</div>
+
+                    <h3>Native Bridge</h3>
+
+                    <p>
+                        Seamlessly move assets between Ethereum and Arbitrum.
+                    </p>
+
+                    <div class="feature-tag">Cross-chain</div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">🔄</div>
+
+                    <h3>Optimistic Rollups</h3>
+
+                    <p>
+                        Transactions are assumed valid by default,
+                        with fraud proofs if challenged.
+                    </p>
+
+                    <div class="feature-tag">Fraud Proofs</div>
+                </div>
+
+                <!-- Feature 7 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">🔧</div>
+
+                    <h3>Full EVM Compatible</h3>
+
+                    <p>
+                        Deploy existing Solidity contracts without any changes.
+                    </p>
+
+                    <div class="feature-tag">EVM Native</div>
+                </div>
+
+                <!-- Feature 8 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">🌐</div>
+
+                    <h3>Decentralized</h3>
+
+                    <p>
+                        Open-source protocol governed by the ARB token community.
+                    </p>
+
+                    <div class="feature-tag">DAO Governed</div>
+                </div>
+
+                <!-- Feature 9 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">🛠️</div>
+
+                    <h3>Developer Friendly</h3>
+
+                    <p>
+                        Works seamlessly with Hardhat, Foundry,
+                        MetaMask, and other Ethereum tools.
+                    </p>
+
+                    <div class="feature-tag">Zero Config</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="how-it-works">
+
+        <div class="container">
+
+            <div class="section-label">Process</div>
+
+            <h2>How Arbitrum Works</h2>
+
+            <p class="section-subtitle">
+                A simple 4-step flow from transaction to finality
+            </p>
+
+            <div class="steps-grid">
+
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-number">01</div>
+
+                    <h3>Submit Transaction</h3>
+
+                    <p>
+                        Users submit transactions to the Arbitrum sequencer,
+                        which processes them instantly.
+                    </p>
+                </div>
+
+                <div class="step-arrow">→</div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-number">02</div>
+
+                    <h3>Batch & Compress</h3>
+
+                    <p>
+                        Transactions are bundled together and compressed
+                        for maximum efficiency.
+                    </p>
+                </div>
+
+                <div class="step-arrow">→</div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-number">03</div>
+
+                    <h3>Post to Ethereum</h3>
+
+                    <p>
+                        Batch data is submitted to Ethereum L1,
+                        ensuring full data availability.
+                    </p>
+                </div>
+
+                <div class="step-arrow">→</div>
+
+                <!-- Step 4 -->
+                <div class="step-card">
+                    <div class="step-number">04</div>
+
+                    <h3>Finality</h3>
+
+                    <p>
+                        After the challenge period, transactions
+                        are finalized with Ethereum-level security.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo">
+                ⚡ Arbitrum Hub
+            </div>
+
+            <p>
+                Built by <strong>Rishita Bhuva</strong> |
+                Arbitrum Builder Pods - LamprosDAO
+            </p>
+
+            <p>
+                <a
+                    href="https://github.com/Rishita2310/arbitrum-web3-site"
+                    target="_blank"
+                    class="footer-link"
+                >
+                    GitHub Repository
+                </a>
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- ================= NAVBAR + THEME SCRIPT ================= -->
+    <script>
+        const html = document.documentElement;
+        const navbar = document.getElementById("navbar");
+        const themeToggle = document.getElementById("themeToggle");
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+        const navOverlay = document.getElementById("navOverlay");
+
+        // ── Theme ──────────────────────────────────────────────
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        html.setAttribute("data-theme", savedTheme);
+        themeToggle.setAttribute("data-theme", savedTheme);
+
+        themeToggle.addEventListener("click", () => {
+            const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            html.setAttribute("data-theme", next);
+            themeToggle.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+
+        // ── Scroll shrink ──────────────────────────────────────
+        window.addEventListener("scroll", () => {
+            navbar.classList.toggle("scrolled", window.scrollY > 20);
+        });
+
+        // ── Hamburger ──────────────────────────────────────────
+        function toggleMenu(open) {
+            hamburger.classList.toggle("open", open);
+            navLinks.classList.toggle("open", open);
+            navOverlay.classList.toggle("open", open);
+            hamburger.setAttribute("aria-expanded", open);
+            document.body.style.overflow = open ? "hidden" : "";
+        }
+
+        hamburger.addEventListener("click", () => {
+            toggleMenu(!navLinks.classList.contains("open"));
+        });
+
+        navOverlay.addEventListener("click", () => toggleMenu(false));
+
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => toggleMenu(false));
+        });
+    </script>
+
+</body>
+</html>

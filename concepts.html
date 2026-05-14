@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbitrum Hub - Concepts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Arbitrum Hub</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="concepts.html" class="active"><span>Concepts</span></a></li>
+                <li><a href="prices.html"><span>Live Prices</span></a></li>
+                <li><a href="simulator.html"><span>Block Simulator</span></a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <span class="toggle-track">
+                        <span class="toggle-thumb">
+                            <span class="toggle-icon sun">☀️</span>
+                            <span class="toggle-icon moon">🌙</span>
+                        </span>
+                    </span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Web3 Concepts</h1>
+            <p>Side-by-side comparisons of core blockchain and Web3 concepts — explained simply</p>
+        </div>
+    </section>
+
+    <!-- Concepts Content -->
+    <section class="concepts-section">
+        <div class="container">
+
+            <!-- Web2 vs Web3 -->
+            <div class="concept-block">
+                <h2>🌐 Web2 vs Web3</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-card left">
+                        <h3>🏢 Web2</h3>
+                        <ul>
+                            <li>Controlled by centralized companies (Google, Meta, Amazon)</li>
+                            <li>Your data is stored on private servers you don't own</li>
+                            <li>Platforms can ban, censor, or delete your account</li>
+                            <li>Trust is placed in corporations and intermediaries</li>
+                            <li>Monetization flows to platform owners, not creators</li>
+                            <li>Single points of failure — if the server goes down, so does the app</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card right">
+                        <h3>🔗 Web3</h3>
+                        <ul>
+                            <li>Decentralized — no single entity controls the network</li>
+                            <li>You own your data and digital assets via private keys</li>
+                            <li>Censorship-resistant — no one can revoke your access</li>
+                            <li>Trust is replaced by cryptographic proofs and smart contracts</li>
+                            <li>Creators earn directly through tokens and NFTs</li>
+                            <li>Distributed nodes — no single point of failure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ethereum vs Bitcoin -->
+            <div class="concept-block">
+                <h2>⚡ Ethereum vs Bitcoin</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-card left">
+                        <h3>₿ Bitcoin</h3>
+                        <ul>
+                            <li>Created in 2009 by Satoshi Nakamoto</li>
+                            <li>Primary purpose: digital store of value ("digital gold")</li>
+                            <li>Limited scripting — not designed for complex programs</li>
+                            <li>Fixed supply of 21 million BTC</li>
+                            <li>Proof of Work consensus — energy intensive</li>
+                            <li>~7 transactions per second on mainnet</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card right">
+                        <h3>Ξ Ethereum</h3>
+                        <ul>
+                            <li>Launched in 2015 by Vitalik Buterin</li>
+                            <li>Primary purpose: programmable blockchain platform</li>
+                            <li>Turing-complete smart contracts via the EVM</li>
+                            <li>No hard supply cap — issuance controlled by protocol</li>
+                            <li>Proof of Stake consensus — 99.9% less energy</li>
+                            <li>~15–30 TPS on mainnet (thousands with L2s)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Public Key vs Private Key -->
+            <div class="concept-block">
+                <h2>🔑 Public Key vs Private Key</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-card left">
+                        <h3>🔓 Public Key</h3>
+                        <ul>
+                            <li>Derived mathematically from your private key</li>
+                            <li>Acts like your bank account number — safe to share</li>
+                            <li>Used to receive funds and verify signatures</li>
+                            <li>Anyone can encrypt a message using your public key</li>
+                            <li>Your wallet address is derived from your public key</li>
+                            <li>Losing it is not a problem — it can be regenerated</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card right">
+                        <h3>🔐 Private Key</h3>
+                        <ul>
+                            <li>A secret 256-bit number — never share it with anyone</li>
+                            <li>Acts like your PIN + password combined</li>
+                            <li>Used to sign transactions and prove ownership</li>
+                            <li>Only you can decrypt messages encrypted with your public key</li>
+                            <li>Controls all assets in your wallet</li>
+                            <li>Losing it means permanent loss of access to your funds</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blockchain vs Traditional Databases -->
+            <div class="concept-block">
+                <h2>🗄️ Blockchain vs Traditional Databases</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-card left">
+                        <h3>🏦 Traditional Database</h3>
+                        <ul>
+                            <li>Managed by a central administrator (DBA)</li>
+                            <li>Data can be modified or deleted by the admin</li>
+                            <li>Fast read/write — optimized for performance</li>
+                            <li>Requires trust in the organization running it</li>
+                            <li>Access controlled by permissions and passwords</li>
+                            <li>Single server or cluster — vulnerable to attacks</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card right">
+                        <h3>⛓️ Blockchain</h3>
+                        <ul>
+                            <li>Distributed across thousands of nodes globally</li>
+                            <li>Immutable — once written, data cannot be altered</li>
+                            <li>Slower writes — consensus required across nodes</li>
+                            <li>Trustless — math and cryptography replace trust</li>
+                            <li>Access controlled by cryptographic keys</li>
+                            <li>No single point of failure — extremely resilient</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built by <strong>Rishita Bhuva</strong> | Arbitrum Builder Pods - LamprosDAO</p>
+            <p>
+                <a href="https://github.com/Rishita2310/arbitrum-web3-site" target="_blank" class="footer-link">
+                    GitHub Repository
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const html = document.documentElement;
+        const navbar = document.getElementById("navbar");
+        const themeToggle = document.getElementById("themeToggle");
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+        const navOverlay = document.getElementById("navOverlay");
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        html.setAttribute("data-theme", savedTheme);
+        themeToggle.setAttribute("data-theme", savedTheme);
+        themeToggle.addEventListener("click", () => {
+            const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            html.setAttribute("data-theme", next);
+            themeToggle.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+        window.addEventListener("scroll", () => {
+            navbar.classList.toggle("scrolled", window.scrollY > 20);
+        });
+        function toggleMenu(open) {
+            hamburger.classList.toggle("open", open);
+            navLinks.classList.toggle("open", open);
+            navOverlay.classList.toggle("open", open);
+            hamburger.setAttribute("aria-expanded", open);
+            document.body.style.overflow = open ? "hidden" : "";
+        }
+        hamburger.addEventListener("click", () => toggleMenu(!navLinks.classList.contains("open")));
+        navOverlay.addEventListener("click", () => toggleMenu(false));
+        navLinks.querySelectorAll("a").forEach(l => l.addEventListener("click", () => toggleMenu(false)));
+    </script>
+</body>
+</html>
